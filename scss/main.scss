@@ -1,1 +1,35 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Variables
+$primary:#401f7c;
+$secondary:#f4f4f4;
+$border-radius:0;
+$border-radius-sm:0;
+$border-radius-lg:0;
+// Utilities
+$Utilities: () !default;
+$Utilities: map-merge(
+(
+'input-padding': (
+      property: padding,
+      class:ip,
+      values: (
+            0:0,
+            1: 0.3rem,
+            2: 0.5rem,
+            3: 0.7rem,
+            4: 0.9rem,
+            5:  1rem,
+      ),
+),
+),
+$Utilities
+
+);
+@import 'style';
+ @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.form-login {
+      background-color: red($color: #000000);
+      color: red($color: #000000);
+
+}
